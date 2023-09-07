@@ -1,0 +1,103 @@
+.logout-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.logout-btn:hover {
+  background-color: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.head-right-item{
+  margin-left: 40%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.points {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.points h2 {
+  margin-top: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #555;
+}
+
+.transaction-list {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.transaction-list li {
+  margin-bottom: 10px;
+}
+
+.transaction-list .date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.transaction-list .description {
+  color: #888;
+}
+
+.transaction-list .points {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

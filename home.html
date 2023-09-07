@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <script src="/static/js/home.js"></script>
+    <title>ポイントアプリ ヤネイ</title>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <div class="container">
+    <div class="points">
+      <h2>Ⓟ利用可能総額ポイント</h2>
+      <p>{{point}}ポイント</p>
+      <div class="actions">
+        <button class=".actions button" id = "shopping" onClick = "shoppingclicked()">ポイントを使用する</button>
+        <button class=".actions button" id = "getpoint" onClick = "getpointclicked()">ポイントを獲得する</button>
+      </div>
+    </div>
+
+    <div class="transaction-list">
+      <h2>ポイント履歴</h2>
+      <ul>
+        <li>
+          <div class="date">2023/05/23</div>
+          <div class="description">商品購入</div>
+          <div class="points">-500ポイント</div>
+        </li>
+        <li>
+          <div class="date">2023/05/20</div>
+          <div class="description">ポイント獲得</div>
+          <div class="points">+200ポイント</div>
+        </li>
+        <li>
+          <div class="date">2023/05/18</div>
+          <div class="description">商品購入</div>
+          <div class="points">-300ポイント</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+<footer>
+  <p>© 2023 ポイントアプリ ヤネイ. All rights reserved.</p>
+</footer>
+</body>
+</html>

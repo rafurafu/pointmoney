@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>送金フォーム</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>送金フォーム</h2>
+  <form action="送金処理.php" method="post">
+    <label for="sender">送金元:</label>
+    <input type="text" id="sender" name="sender"><br><br>
+    
+    <label for="recipient">送金先:</label>
+    <input type="text" id="recipient" name="recipient"><br><br>
+    
+    <label for="amount">金額:</label>
+    <input type="text" id="amount" name="amount"><br><br>
+    
+    <input type="submit" value="送金する">
+  </form>
+</body>
+</html>

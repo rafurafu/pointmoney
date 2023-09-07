@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ポイントアプリ ヤネイの商品ページ</title>
+  <link rel="stylesheet" type="text/css" href="/static/shopping.css">
+  <script src="/static/js/shopping.js"></script>
+</head>
+<header>
+<body>
+  {% include 'header.html' %}
+  <div class="grid-container">
+    {% for product in data %}
+      <div class="grid-item">
+        <input type="hidden" name="hidden_data" value={{product.id}} id = "productId">
+        <h2>{{product.name}}</h2>
+        <img src="data:image/jpeg;base64,{{image}}" alt="商品1の画像">
+        <p>{{product.description}}</p>
+        <p>価格: {{product.price}}円</p>
+        <button class=".actions button" id = "addition" onClick = "additionclicked({{product.id}})">カートに追加</button>
+      </div>
+    {% endfor %}
+  </div>
+  <button class="cart-icon" onClick="goToCart()">
+    <img src="/static/images/cart.png" alt="Cart Icon" class="ct-ic">
+    <span class="cart-count" id="cartCount">0<span>
+  </button>
+</body>
+</html>
